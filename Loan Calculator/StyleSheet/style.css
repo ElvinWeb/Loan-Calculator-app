@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.loan-calculator {
+  max-width: 700px;
+  margin: 25px auto;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.loan-calculator .top {
+  background: #14213d;
+  color: #fff;
+  padding: 35px;
+}
+.loan-calculator .top h2 {
+  margin-top: 0;
+}
+.loan-calculator #form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 15px;
+}
+.loan-calculator .group .title {
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+.loan-calculator #form input {
+  font-size: 20px;
+  padding: 8px 24px;
+  width: 100%;
+  outline: none;
+}
+.loan-calculator .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loan-calculator .result .left {
+  width: 100%;
+  padding: 25px 32px;
+}
+.loan-calculator .left h3 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-top: 12px;
+}
+.loan-calculator .result .value {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(20, 33, 61, 0.2);
+}
+.loan-calculator .result .value::before {
+  content: "$";
+  font-size: 25px;
+  font-weight: 300;
+  margin-right: 6px;
+  opacity: 0.5;
+}
+.loan-calculator .left .calc-btn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin: 24px 0;
+  transition: all 0.3s ease-in-out;
+}
+.left .calc-btn:hover {
+  background-color: #14213d;
+  transition: all 0.3s ease-in-out;
+}
+
+.loan-calculator .right {
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .loan-calculator {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .loan-calculator form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan-calculator .result {
+    flex-direction: column;
+    text-align: center;
+  }
+}
